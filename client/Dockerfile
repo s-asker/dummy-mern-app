@@ -15,11 +15,10 @@ RUN npm audit fix
 
 # Use Nginx to serve the React frontend
 FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # Expose the Nginx default port
 EXPOSE 80
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
-
