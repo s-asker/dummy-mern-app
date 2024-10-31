@@ -6,7 +6,7 @@ export const fetchPerson = createAsyncThunk(
   "people/fetchPerson",
   async (data) => {
     const response = await axios(
-      `http://localhost:3000/api/v1/people/${data.person._id}`
+      `http://172.31.18.143:3000/api/v1/people/${data.person._id}`
     );
 
     return response.data;
