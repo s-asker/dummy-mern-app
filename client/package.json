@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "proxy": "http://172.31.18.143:3000",
+  "proxy": "http://backend:3000",
   "type": "module",
   "scripts": {
     "dev": "vite",
